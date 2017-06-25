@@ -1403,7 +1403,7 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
 
 @media all and (max-width: 480px) { .user_badge--small { margin-top: 10px; } }
 
-.pdf_icon { display: inline-block; vertical-align: middle; margin: -10px 6px -10px 0; position: relative; top: -2px; background: transparent url(../../img/pdf.svg) no-repeat center; width: 20px; height: 24px; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+.pdf_icon { display: inline-block; vertical-align: middle; margin: -10px 6px -10px 0; position: relative; top: -2px; background: transparent url(../img/pdf.svg) no-repeat center; width: 20px; height: 24px; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 
 .valign { display: table; table-layout: fixed; height: 100%; width: 100%; }
 
@@ -1415,7 +1415,7 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
   .social--footer_alt li { margin: 0 5px 5px; }
   .social--footer_alt .icon { font-size: 18px; } }
 
-.r_header { background: #ff2800 url(../../img/bg.svg) no-repeat center; color: #fff; text-align: center; -webkit-background-size: 452px; -moz-background-size: 452px; -o-background-size: 452px; background-size: 452px; padding: 76px 0; padding: 4.75rem 0; }
+.r_header { background: #ff2800 url(../img/bg.svg) no-repeat center; color: #fff; text-align: center; -webkit-background-size: 452px; -moz-background-size: 452px; -o-background-size: 452px; background-size: 452px; padding: 76px 0; padding: 4.75rem 0; }
 
 .r_header h1 { color: inherit; }
 
