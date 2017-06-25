@@ -11,7 +11,7 @@ function initEventsOnResize() {
     });
 
     $('.valign').css({
-      minHeight: wH - ($('.r_header').outerHeight() + $('.footer').outerHeight()) - 40
+      minHeight: wH - ($('.r_header').outerHeight() + $('.footer').outerHeight()) - 50
     })
   }).trigger('resize');
 }
