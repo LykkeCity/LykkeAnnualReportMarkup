@@ -10,18 +10,23 @@
     color: inherit;
   }
 
+  .btn--inverse {
+    @include rem(margin-bottom, -40px);
+  }
+
   &__title {
     font-weight: bold;
     line-height: 1;
     text-align: center;
 
-    @include rem(font-size, 60px);
+    @include rem(font-size, 50px);
     @include rem(margin-bottom, 15px);
   }
 
   &__desc {
     line-height: 1.4;
 
+    @include rem(margin-top, 15px);
     @include rem(font-size, 30px);
   }
 
@@ -33,6 +38,18 @@
     h1 {
       font-size: 24px;
       margin-bottom: 6px;
+    }
+
+    .btn--inverse {
+      font-size: 14px;
+      margin-top: 10px;
+      padding: 11px 28px 8px;
+      margin-bottom: -12px;
+
+      .pdf_icon {
+        width: 16px;
+        height: 18px;
+      }
     }
 
     &__desc {

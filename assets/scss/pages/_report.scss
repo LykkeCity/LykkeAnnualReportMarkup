@@ -22,6 +22,8 @@ h5 {
       &:checked {
         + .control-label {
           border-color: $primary;
+          color: $primary;
+          font-weight: $fw-semi;
           box-shadow: inset 0 0 0 1px $primary;
         }
       }
@@ -122,6 +124,20 @@ textarea.form-control {
 
     &:not([disabled]):hover {
       background-color: darken(#f6f7f8, 10%);
+    }
+  }
+
+  &--inverse {
+    background-color: $white;
+    color: $primary;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+    line-height: 25px;
+
+    &:not([disabled]):hover {
+      color: $primary;
+      background-color: rgba($white, .9);
     }
   }
 }
