@@ -1431,7 +1431,7 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
 
 @media all and (max-width: 480px) { .r_header { padding: 44px 0 40px; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
   .r_header h1 { font-size: 24px; margin-bottom: 6px; }
-  .r_header .btn--inverse { font-size: 14px; margin-top: 10px; padding: 11px 28px 8px; margin-bottom: -20px; }
+  .r_header .btn--inverse { font-size: 14px; margin-top: 10px; padding: 11px 28px 8px; margin-bottom: -12px; }
   .r_header .btn--inverse .pdf_icon { width: 16px; height: 18px; }
   .r_header__desc { font-size: 16px; } }
 
