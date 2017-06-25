@@ -1355,7 +1355,7 @@ h5 { line-height: 1.2; margin-bottom: 30px; font-size: 18px; }
 
 .radio--plate input { position: absolute; right: 100%; bottom: 100%; opacity: 1; visibility: hidden; }
 
-.radio--plate input:checked + .control-label { border-color: #ff2800; box-shadow: inset 0 0 0 1px #ff2800; }
+.radio--plate input:checked + .control-label { border-color: #ff2800; color: #ff2800; font-weight: 600; box-shadow: inset 0 0 0 1px #ff2800; }
 
 .radio--plate .control-label { color: #3F4D60; border: 1px solid #cfd2d7; border-radius: 4px; text-align: center; width: 100%; font-size: 16px; padding: 14px; line-height: 20px; -webkit-transition: all 0.3s ease; -moz-transition: all 0.3s ease; -o-transition: all 0.3s ease; transition: all 0.3s ease; }
 
@@ -1393,6 +1393,10 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
 
 .btn--gray:not([disabled]):hover { background-color: #d9dee2; }
 
+.btn--inverse { background-color: #fff; color: #ff2800; text-transform: uppercase; letter-spacing: 2px; font-size: 14px; line-height: 25px; }
+
+.btn--inverse:not([disabled]):hover { color: #ff2800; background-color: rgba(255, 255, 255, 0.9); }
+
 .user_badge--small { text-align: center; margin-bottom: 30px; margin-bottom: 1.875rem; }
 
 .user_badge--small .user_badge__img { width: 40px; height: 40px; }
@@ -1403,7 +1407,7 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
 
 @media all and (max-width: 480px) { .user_badge--small { margin-top: 10px; } }
 
-.pdf_icon { display: inline-block; vertical-align: middle; margin: -10px 6px -10px 0; position: relative; top: -2px; background: transparent url(../img/pdf.svg) no-repeat center; width: 20px; height: 24px; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
+.pdf_icon { display: inline-block; vertical-align: middle; margin: -10px 6px -10px 0; position: relative; top: -2px; background: transparent url(../../img/pdf.svg) no-repeat center; width: 20px; height: 24px; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
 
 .valign { display: table; table-layout: fixed; height: 100%; width: 100%; }
 
@@ -1415,16 +1419,20 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
   .social--footer_alt li { margin: 0 5px 5px; }
   .social--footer_alt .icon { font-size: 18px; } }
 
-.r_header { background: #ff2800 url(../img/bg.svg) no-repeat center; color: #fff; text-align: center; -webkit-background-size: 452px; -moz-background-size: 452px; -o-background-size: 452px; background-size: 452px; padding: 76px 0; padding: 4.75rem 0; }
+.r_header { background: #ff2800 url(../../img/bg.svg) no-repeat center; color: #fff; text-align: center; -webkit-background-size: 452px; -moz-background-size: 452px; -o-background-size: 452px; background-size: 452px; padding: 76px 0; padding: 4.75rem 0; }
 
 .r_header h1 { color: inherit; }
 
-.r_header__title { font-weight: bold; line-height: 1; text-align: center; font-size: 60px; font-size: 3.75rem; margin-bottom: 15px; margin-bottom: 0.9375rem; }
+.r_header .btn--inverse { margin-bottom: -40px; margin-bottom: -2.5rem; }
 
-.r_header__desc { line-height: 1.4; font-size: 30px; font-size: 1.875rem; }
+.r_header__title { font-weight: bold; line-height: 1; text-align: center; font-size: 50px; font-size: 3.125rem; margin-bottom: 15px; margin-bottom: 0.9375rem; }
+
+.r_header__desc { line-height: 1.4; margin-top: 15px; margin-top: 0.9375rem; font-size: 30px; font-size: 1.875rem; }
 
 @media all and (max-width: 480px) { .r_header { padding: 44px 0 40px; -webkit-background-size: contain; -moz-background-size: contain; -o-background-size: contain; background-size: contain; }
   .r_header h1 { font-size: 24px; margin-bottom: 6px; }
+  .r_header .btn--inverse { font-size: 14px; margin-top: 10px; padding: 11px 28px 8px; margin-bottom: -20px; }
+  .r_header .btn--inverse .pdf_icon { width: 16px; height: 18px; }
   .r_header__desc { font-size: 16px; } }
 
 .r_block { width: 570px; margin-left: auto; margin-right: auto; max-width: 100%; position: relative; padding: 90px 0; padding: 5.625rem 0; }
@@ -1439,7 +1447,7 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
 
 .r_block--message { text-align: center; padding: 0; }
 
-.r_block--message .valign { padding: 34px 0 130px; }
+.r_block--message .valign { padding: 34px 0; }
 
 .r_block--message .report_link { position: absolute; left: 0; right: 0; margin: 0 auto; bottom: 18px; bottom: 1.125rem; }
 
