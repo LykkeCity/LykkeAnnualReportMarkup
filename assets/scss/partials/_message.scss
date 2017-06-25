@@ -1,0 +1,33 @@
+.r_message {
+  &__icon {
+    margin-bottom: 22px;
+  }
+
+  &__text {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center;
+    color: rgba($secondary, .6);
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: $fw-bold;
+    text-align: center;
+    color: $text;
+    margin-bottom: 3px;
+  }
+}
+
+.login_link {
+  font-size: 18px;
+  font-weight: $fw-semi;
+  text-align: center;
+  color: $text;
+  padding: 12px;
+  display: inline-block;
+
+  &:hover {
+    color: $primary;
+  }
+}

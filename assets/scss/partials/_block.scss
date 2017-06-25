@@ -1,0 +1,101 @@
+.r_block {
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+  position: relative;
+
+  @include rem(padding, 90px 0);
+
+  &__header {
+    border-bottom: 1px solid #ebedef;
+
+    @include clearfix;
+    @include rem(padding-bottom, 24px);
+    @include rem(margin-bottom, 14px);
+
+    h3 {
+      margin-bottom: 0;
+      font-weight: $fw-semi;
+    }
+
+    a {
+      text-align: right;
+      color: $secondary;
+
+      @include rem(margin-top, 9px);
+      @include rem(font-size, 18px);
+    }
+  }
+
+  &--message {
+    text-align: center;
+    padding: 0;
+
+    .valign {
+      padding: 34px 0 130px;
+    }
+
+    .report_link {
+      position: absolute;
+      left: 0;
+      right: 0;
+      margin: 0 auto;
+
+      @include rem(bottom, 18px);
+    }
+  }
+
+  &--results {
+    text-align: center;
+
+    @include rem(padding, 50px 0);
+
+    .report_link {
+      margin-bottom: 10px;
+    }
+  }
+
+  @media all and (max-width: $screen-mobile-tiny) {
+    padding-bottom: 24px;
+    padding-top: 20px;
+
+    &__header {
+      h3 {
+        font-size: 18px;
+      }
+
+      a {
+        font-size: 18px;
+        margin-top: 0;
+      }
+    }
+
+    .valign {
+      padding-top: 0;
+      height: auto !important;
+      min-height: 0 !important;
+    }
+
+    .valign_cell {
+      vertical-align: top;
+    }
+
+    &--message {
+      min-height: 0;
+
+      .valign {
+        padding-bottom: 20px;
+      }
+
+      .report_link {
+        position: static;
+      }
+    }
+  }
+}
+
+.report_link {
+  width: 370px;
+  max-width: 100%;
+}

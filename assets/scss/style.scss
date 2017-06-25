@@ -1,0 +1,13 @@
+@import "../../node_modules/LykkeFramework/assets/scss/style-minimal.scss";
+$primary: #ff2800;
+@import "../../node_modules/LykkeFramework/assets/scss/style-necessaries.scss";
+
+// elements
+@import '../../node_modules/LykkeFramework/assets/scss/partials/user';
+
+// optional
+@import 'pages/report';
+@import 'partials/header';
+@import 'partials/block';
+@import 'partials/message';
+@import 'partials/results';
