@@ -1456,6 +1456,8 @@ textarea.form-control { min-height: 105px; padding: 15px 20px; }
 
 .r_block__header a { color: #3F4D60; display: inline-block; vertical-align: middle; font-size: 18px; }
 
+.r_block__header a:hover { color: rgba(63, 77, 96, 0.7); }
+
 .r_block__header .middot { display: inline-block; vertical-align: middle; font-weight: 600; font-size: 28px; font-size: 1.75rem; }
 
 .r_block--message { text-align: center; padding: 0; }
