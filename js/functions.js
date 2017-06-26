@@ -33,7 +33,7 @@ function initEventsOnLoad() {
     setTimeout(function() {
       $('.r_candle').each(function() {
         $(this).css({
-          height: parseInt($(this).data('height')) + '%'
+          width: parseInt($(this).data('percent')) + '%'
         })
       });
     }, 100);
@@ -48,10 +48,25 @@ function textareaCounter() {
   });
 }
 
+function resultsCounter() {
+  var comma_separator_number_step = $.animateNumber.numberStepFactories.separator(',');
+
+  $('.r_result__accent, .r_result__desc ._val').each(function() {
+    $(this).animateNumber(
+      {
+        number: $(this).text().replace(',', ''),
+        numberStep: comma_separator_number_step
+      },
+      1000
+    );
+  });
+}
+
 
 $(document).ready(function() {
   initEventsOnResize();
   initEventsOnClick();
   initEventsOnLoad();
   textareaCounter();
+  resultsCounter();
 });
