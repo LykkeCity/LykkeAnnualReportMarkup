@@ -33,7 +33,7 @@ function initEventsOnLoad() {
     setTimeout(function() {
       $('.r_candle').each(function() {
         $(this).css({
-          height: parseInt($(this).data('height')) + '%'
+          width: parseInt($(this).data('percent')) + '%'
         })
       });
     }, 100);

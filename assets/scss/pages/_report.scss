@@ -128,16 +128,18 @@ textarea.form-control {
   }
 
   &--inverse {
-    background-color: $white;
-    color: $primary;
+    background-color: $primary;
+    color: $white;
     text-transform: uppercase;
     letter-spacing: 2px;
     font-size: 14px;
+    font-weight: $fw-semi;
     line-height: 25px;
 
-    &:not([disabled]):hover {
-      color: $primary;
-      background-color: rgba($white, .9);
+    .pdf_icon {
+      background-image: url(../img/pdf_white.svg);
+      width: 15px;
+      height: 18px;
     }
   }
 }
@@ -175,7 +177,7 @@ textarea.form-control {
   margin: -10px 6px -10px 0;
   position: relative;
   top: -2px;
-  background: transparent url(../../img/pdf.svg) no-repeat center;
+  background: transparent url(../img/pdf.svg) no-repeat center;
   width: 20px;
   height: 24px;
 
@@ -198,8 +200,16 @@ textarea.form-control {
   vertical-align: middle;
 }
 
-@media all and (max-width: 350px) {
-  .social--footer_alt {
+.social--footer_alt {
+  white-space: nowrap;
+  float: right;
+
+  @media all and (max-width: $screen-tablet) {
+    float: none;
+  }
+
+  @media all and (max-width: 350px) {
+    white-space: normal;
     width: 240px;
     margin-left: auto;
     margin-right: auto;
@@ -213,4 +223,6 @@ textarea.form-control {
     }
   }
 }
+
+
 

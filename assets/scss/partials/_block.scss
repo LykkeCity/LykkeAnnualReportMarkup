@@ -7,24 +7,41 @@
 
   @include rem(padding, 90px 0);
 
+  .lead {
+    text-align: left;
+    color: #8c94a0;
+    font-size: 22px;
+    line-height: 1.64;
+
+    @include rem(margin-bottom, 40px);
+  }
+
   &__header {
-    border-bottom: 1px solid #ebedef;
+    text-align: left;
 
     @include clearfix;
-    @include rem(padding-bottom, 24px);
-    @include rem(margin-bottom, 14px);
+    @include rem(margin-bottom, 10px);
 
     h3 {
       margin-bottom: 0;
       font-weight: $fw-semi;
+      display: inline-block;
+      vertical-align: middle;
     }
 
     a {
-      text-align: right;
       color: $secondary;
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 18px;
+    }
 
-      @include rem(margin-top, 9px);
-      @include rem(font-size, 18px);
+    .middot {
+      display: inline-block;
+      vertical-align: middle;
+      font-weight: $fw-semi;
+
+      @include rem(font-size, 28px);
     }
   }
 
@@ -57,17 +74,26 @@
   }
 
   @media all and (max-width: $screen-mobile-tiny) {
-    padding-bottom: 24px;
-    padding-top: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    .lead {
+      font-size: 18px;
+      line-height: 1.11;
+      margin-bottom: 22px;
+    }
 
     &__header {
-      h3 {
+      margin-bottom: 12px;
+
+      h3, a, .middot {
         font-size: 18px;
+        line-height: 1;
       }
 
       a {
-        font-size: 18px;
-        margin-top: 0;
+        position: relative;
+        top: -1px;
       }
     }
 
